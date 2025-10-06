@@ -22,6 +22,9 @@
                      <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories')" class="text-gray-300 hover:text-white">
                          {{ __('Categories') }}
                      </x-nav-link>
+                     <x-nav-link :href="route('ai.model')" :active="request()->routeIs('ai')" class="text-gray-300 hover:text-white">
+                         {{ __('OpenAI') }}
+                     </x-nav-link>
                  </div>
 
              </div>

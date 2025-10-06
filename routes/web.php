@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AIController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,6 +30,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::view('/ai' , 'AI')->name('ai.model');
+Route::post('/ai/summary', [AIController::class, 'summarize'])->name('ai.process');
 
 
 
