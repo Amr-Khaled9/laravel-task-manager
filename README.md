@@ -49,5 +49,11 @@ The project is built using **Laravel** for the backend and utilizes **Tailwind C
 
 * Fully responsive design for mobile, tablet, and desktop.
 * Simple, intuitive, and user-friendly interface.
+  
+###  AI Integration
 
- 
+* Integration with OpenAI API to provide smart task assistance.
+* Users can get AI-generated summaries or insights based on their task descriptions.
+* The feature enhances productivity by allowing users to quickly summarize or refine their tasks through AI-powered responses.
+
+  
